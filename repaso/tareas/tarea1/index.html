@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Pizaaa | Hola! 👋</title>
+
+    <link rel="stylesheet" href="./styles/index.css">
+
+
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <!-- Roboto Slab Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto+Slab:wght@100;400&display=swap" rel="stylesheet">
+    <!-- Light font  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navegacion -->
+    <nav class="nav" id="header">
+        <header>
+            <span id="logo">
+                Tu Pizzaaa! 🍕
+            </span>
+        </header>
+
+        <ul id="nav-opener">
+            <li>
+                <strong>+</strong>
+            </li>
+        </ul>
+
+        <ul id="nav-content">
+            <li class="font-secondary"><a class="item-nav" href="./">Hola!</a></li>
+            <li class="font-secondary"><a class="item-nav" href="./receta.html">Receta</a></li>
+            <li class="font-secondary"><a class="item-nav" href="./ingredientes.html">Ingredientes</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Intro tu pizza -->
+    <section id="intro">
+        <h1 class="title-lg txt-center mb-3">Bienvenido a Tu pizzaaa! </h1>
+        <div class="content-intro">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis similique consequatur eos? Maiores inventore beatae repellendus ipsa ullam! Id harum vel porro reprehenderit ab commodi excepturi quibusdam perferendis eius quis.</p>
+            <img class="img-rotator-r" src="./img/pizza1.jpeg" alt="pizzza" />
+        </div>
+    </section>
+
+    <section class="legend">
+        <i class="light-legend">"Lorem ipsum dolor sit amet consectetur."</i>
+    </section>
+
+    <!-- Historia de la pizza -->
+
+    <section class="history">
+        <h2 class="title-lg txt-center mb-3">La historia de la pizza.</h2>
+        <div class="content-history">
+            <img class="img-rotator-l" src="./img/pizza2.jpg" alt="Pizza 2"/>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ut itaque ea natus, ab molestias sed, pariatur eius quidem odit quia blanditiis laborum corporis voluptate tempore vel vitae veritatis. Rerum?</p>
+        </div>
+    </section>
+
+    <!-- Redirector -->
+
+    <section class="redirector">
+        <h4 class="title-sm">Listo para preparar una deliciosa pizza?</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eum a tenetur error saepe reiciendis optio cum odit officiis minus consequuntur voluptates dolores, nostrum suscipit nemo amet dolore maxime vitae.</p>
+        <div id="btn-container">
+            <div>
+                <a href="/receta" class="btn btn-light">Listo para cocinar!</a>
+            </div>
+            <div>
+                <a href="/ingredientes" class="btn btn-dark">Ver los ingredientes.</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <span id="logo-small">
+            Tu Pizzaaa! 🍕
+        </span>
+        <br/>
+        <small>Made quickly</small>
+
+        <section>
+        
+        </section>
+    </footer>
+
+
+    <script>
+        // small script for the nav interaction
+
+        const header = document.querySelector("#header");
+        const navContent = document.querySelector("#nav-content");
+        const navOpener = document.querySelector("#nav-opener");
+
+
+        header.addEventListener("mouseover", () => {
+            navContent.style.display = "flex";
+            navOpener.style.visibility = "hidden";
+        });
+
+
+        header.addEventListener("mouseleave", () => {
+            navContent.style.display = "none";
+            navOpener.style.visibility = "visible";
+        })
+    </script>
+</body>
+</html>

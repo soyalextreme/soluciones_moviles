@@ -1,0 +1,17 @@
+/* comment */
+
+#main {
+    padding: 2rem;
+}
+
+table, th, td {
+    border: 2px outset purple;
+    padding: 1.2rem 2rem;
+    border-collapse: collapse;
+}
+
+
+
+th {
+    background-color: palegreen;
+}

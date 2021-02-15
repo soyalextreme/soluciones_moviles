@@ -1,0 +1,42 @@
+/* 08 Febrary 2021 */
+/* Author: Alejandro Andrade */
+
+
+.font-title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: darkslateblue;
+}
+
+
+.card {
+    background-color: darkslateblue;
+    padding: 2rem 2rem;
+    margin: 5rem auto;
+    width: 70%;
+    border-radius: 4rem;
+}
+
+
+.card:hover {
+    cursor: pointer;
+    border-radius: 2rem;
+    background-color: darkslategray;
+}
+
+
+.btn {
+    border: 0.2rem solid darkslategray;
+    padding: 0.6rem;
+    border-radius: 2rem;
+}
+
+.btn:hover {
+    border: 0.2rem solid darkslateblue;
+    color: darkslategray;
+}
+
+
+.image-section {
+    margin-bottom: 2rem;
+}
+
