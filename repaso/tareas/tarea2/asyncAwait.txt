@@ -1,0 +1,26 @@
+
+
+Async => iniciar un proceso asincrono.
+Await => esperar un resolve de la promesa.
+
+
+
+URI => una variable con una URL que sea un endpoint para la peticion.
+async => usamos async antes de la funcion para indicar que podemos
+         usar procesos asyncronos.
+await => es la palabra clave para esperar la solucion de la peticion 
+         que al hacer el request espera una promesa.
+
+
+// ASYNC WAY
+const fetchInfo = async () => {
+    const res = await fetch(URI);
+    const data = await res.json();
+    console.log(data);
+}
+
+
+// OLD SCHOOL form
+const fetchInfo = () => {
+    fetch(URI).then(res => res.json).then(data => console.log(data));
+}
